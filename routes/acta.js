@@ -2,6 +2,7 @@ const router = require('express').Router();
 const ActaModel = require('../models/acta');
 
 const verifyToken = require('../util/tokenValidation');
+
 const { paginationSize } = require('../constants/constants');
 
 router.post('/add', verifyToken, async (req, res) => {
